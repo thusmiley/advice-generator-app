@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;800&display=swap')
+
+$lightcyan: hsl(193, 38%, 86%)
+$neongreen: hsl(150, 100%, 66%)    
+$GrayishBlue: hsl(217, 19%, 38%)
+$DarkGrayishBlue: hsl(217, 19%, 24%)
+$DarkBlue: hsl(218, 23%, 16%)
+
+*
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+
+body
+    font-family: 'Manrope', sans-serif    
+    background-color: $DarkBlue
+    display: flex
+    justify-content: center
+    align-items: center
+    min-height: 100vh
+    transition: 0.5s
+    transition-timing-function: ease-in
+h1
+    font-size: 28px
+    color: $lightcyan
+    text-align: center
+    letter-spacing: 0.5px
+    margin: 24px 0 40px 0
+p
+    font-size: 12px   
+    color: $neongreen    
+    letter-spacing: 2px     
+img
+    max-width: 100%
+    display: block
+main
+    padding: 48px 48px 72px 48px
+    background-color: $DarkGrayishBlue
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    width: 40%
+    border-radius: 15px
+    position: relative
+button 
+    margin-top: 40px
+    padding: 20px
+    border-radius: 50px
+    background-color: $neongreen
+    border: none
+    cursor: pointer
+    position: absolute
+    bottom: -32px
+    &:hover
+        box-shadow: 0 0 30px hsl(150, 100%, 66%) 
+
+@media only screen and (max-width: 1200px)      
+    main
+        width: 70%  
+@media only screen and (max-width: 768px)      
+    main
+        width: 90%  
+        padding: 40px 24px 64px 24px
+    h1
+        font-size: 24px
+@media only screen and (max-width: 480px)   
+    body
+        align-items: flex-start   
+    main
+        width: 94%    
+        margin-top: 120px
+        border-radius: 10px
+
+    p
+        font-size: 11px         
